@@ -45,13 +45,12 @@ nav ul li {
 nav ul li a {
     display: inline-block;
     padding: 12px;
-    /* Add your custom styles below to change appearance of links */
     color: #DAE1E7;
     text-decoration: none;
     letter-spacing: 0.05em;
 }
 nav ul li a:hover, nav ul li a:focus {
-    color: #eb6f4a;
+    color: #E44C65;
 }
 #checkbox {
     display: none;
@@ -126,12 +125,17 @@ div.hero-content-btn a {
 }
 
 @media screen and (max-width: 768px){
+    div.hero-section {
+        padding: 5rem;
+    }
     div.hero-content-heading h3 {
-        font-size: 1.5rem;
+        font-size: 1.5rem; 
+        text-align: left;    
     }
     
     div.hero-content-heading p {
         font-size: 0.8rem;
+        text-align: left;
     }
     div.hero-content-btn a {
         font-size: 0.8rem;
@@ -286,9 +290,8 @@ div.box1 h5 {
 
 @media screen and (max-width: 768px){
     div.snapshot-team {
-        background: #f0f0f0;
         text-align: center;
-        padding-top: 2rem;
+        padding: 0.2rem;
     }
     
     div.snapshot-team h2 {
@@ -296,7 +299,7 @@ div.box1 h5 {
     }
     
     div.snapshot-team p {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     
     div.snapshot-box {
@@ -455,4 +458,32 @@ div.footer h6 {
     color: #88949B;
     font-size: 1rem;
     padding-top: 6rem;
+}
+@media screen and (max-width: 768px){
+    div.footer-input {
+        display: flex;
+        flex-direction: column;
+        padding-top: 2rem;
+        justify-content: center;
+    }
+    
+    input[type="text"] {
+        margin-right: 10px;
+        padding: 10px 20px;
+        width: 85%;
+        margin-bottom: 1.5rem;
+    }
+    
+    input[type="email"] {
+        margin-right: 10px;
+        padding: 10px 20px;
+        width: 85%;
+    }
+    
+    textarea {
+        width: 81%;
+        height: 150px;
+        margin-right: 10px;
+        padding: 10px 20px;
+    }
 }
